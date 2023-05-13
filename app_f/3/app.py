@@ -41,4 +41,4 @@ def chat(message):
     return response
 
 iface = gr.Interface(chat_base, gr.inputs.Textbox(label="Ask Chatbot a Question"), "text", allow_screenshot=False, allow_flagging=False,title="Alpaca Chatbot")
-iface.launch()
+iface.launch(server_name="0.0.0.0")
